@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hurling Premier League - Matches</title>
+    <link rel="stylesheet" href="../css/matches_style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <h1>HURLING PREMIER LEAGUE</h1>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="./teams.html">Teams</a></li>
+            <li><a href="./point_table.html">Point Table</a></li>
+            <li><a href="./matches.html">Matches</a></li>
+        </ul>
+
+        <!-- Get Tickets Button -->
+        <label for="ticket-popup" class="btn">Get Tickets</label>
+
+        <!-- Ticket Pop-up -->
+        <input type="checkbox" id="ticket-popup" class="popup-checkbox">
+        <div class="popup-overlay">
+        <div class="popup">
+            <h2>Get Tickets</h2>
+            <form>
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <select id="match" required>
+                    <option value="">Select Match</option>
+                    <option value="Match 1">Match 1</option>
+                    <option value="Match 2">Match 2</option>
+                </select>
+                <button type="submit" class="btn">Book Now</button>
+            </form>
+        </div>
+        </div>
+    </nav>
+    <main>
+        <div class="matches-container">
+            <div class="match">
+                <div class="team">
+                    <img src="../images/Dublin_Logo.svg" alt="Team 1">
+                    <!-- <span>Team A</span> -->
+                </div>
+                <div class="details">
+                    <span class="vs">VS</span>
+                    <span>March 25, 2025 | 7:00 PM</span>
+                    <span>Stadium: Dublin Arena</span>
+                </div>
+                <div class="team">
+                    <img src="../images/Cork_Logo.svg" alt="Team 2">
+                    <!-- <span>Team B</span> -->
+                </div>
+            </div>
+
+            <div class="match">
+                <div class="team">
+                    <img src="../images/Galway_Logo.svg" alt="Team 3">
+                    <!-- <span>Team C</span> -->
+                </div>
+                <div class="details">
+                    <span class="vs">VS</span>
+                    <span>March 26, 2025 | 6:30 PM</span>
+                    <span>Stadium: Cork Stadium</span>
+                </div>
+                <div class="team">
+                    <img src="../images/Kilkenny_Logo.svg" alt="Team 4">
+                    <!-- <span>Team D</span> -->
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

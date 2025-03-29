@@ -1,0 +1,169 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('../images/stadium.webp');
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow:hidden;
+}
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    height:2.5em;
+    width:100%;
+    position: fixed;
+    top:0;
+    left:0;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar ul li a.active {
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, 1);
+    background-color: rgba(0, 123, 255, 0.2);
+    border-bottom: 3px solid #000000;
+    font-weight: bold;
+    padding: 5px;
+}
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+.popup {
+    background: #fff;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    color: #000000;
+}
+.popup input, 
+.popup select {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.popup .btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.popup .btn:hover {
+    background: #0056b3;
+}
+
+.popup-checkbox {
+    display: none;
+}
+
+.popup-checkbox:checked + .popup-overlay {
+    display: flex;
+}
+
+.popup-checkbox {
+    display: none;
+}
+
+.popup-checkbox:checked + .popup-overlay {
+    display: flex;
+}
+
+
+.btn {
+    background: yellow;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.matches-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding-top:20vh;
+}
+.match {
+    background: #222;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.team {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    min-width: 120px;
+}
+
+.team img {
+    width: 12vh;
+    height: 12vh;
+    margin-bottom: 5px;
+}
+
+.details {
+    flex: 2;
+    text-align: center;
+    font-size: 16px;
+    min-width: 150px;
+}
+
+.vs {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+@media (max-width: 600px) {
+    .match {
+        flex-direction: column;
+    }
+
+    .details {
+        font-size: 14px;
+    }
+}

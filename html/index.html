@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hurling Premier League</title>
+    <link rel="stylesheet"  href="../css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <h1>HURLING PREMIER LEAGUE</h1>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="./teams.html">Teams</a></li>
+            <li><a href="./point_table.html">Point Table</a></li>
+            <li><a href="./matches.html">Matches</a></li>
+        </ul>
+
+        <!-- Get Tickets Button -->
+        <label for="ticket-popup" class="btn">Get Tickets</label>
+
+        <!-- Ticket Pop-up -->
+        <input type="checkbox" id="ticket-popup" class="popup-checkbox">
+        <div class="popup-overlay">
+        <div class="popup">
+            <h2>Get Tickets</h2>
+            <form>
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <select id="match" required>
+                    <option value="">Select Match</option>
+                    <option value="Match 1">Match 1</option>
+                    <option value="Match 2">Match 2</option>
+                </select>
+                <button type="submit" class="btn">Book Now</button>
+            </form>
+        </div>
+        </div>
+    </nav>
+    <!-- Match Highlights -->
+    <section class="highlights">
+        <div class="card">
+            <h3>Latest Matches</h3>
+            <p>See the latest results and match stats.</p>
+        </div>
+        <div class="card">
+            <h3>Top Scorers</h3>
+            <p>Track the leading players in the league.</p>
+        </div>
+        <div class="card">
+            <h3>Upcoming Fixtures</h3>
+            <p>Never miss an important game.</p>
+        </div>
+    </section>
+    <!-----Footer Content-->
+    <footer class="footer">
+        <p>Contact us: <a href="mailto:contact@hurlingleague.com">contact@hurlingleague.com</a></p>
+        <p>Visit: <a href="https://www.gaa.ie/hurling/" target="_blank">GAA Hurling</a></p>
+    </footer>
+</body>
+</html>
